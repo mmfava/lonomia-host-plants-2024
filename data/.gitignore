@@ -3,3 +3,15 @@
 *.xlsx
 *.csv
 *.txt
+
+./South_America
+
+*.rds
+*.dbf
+*.prj
+*.sbn
+*.sbx
+*.shp
+*.sbn
+*.xml
+*.shx
