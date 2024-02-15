@@ -1,0 +1,74 @@
+---
+title: "Untitled"
+author: "Marília Melo Favalesso"
+date: "2022-12-03"
+output:
+  word_document: default
+---
+
+```{r echo=FALSE}
+## Packages --------------------------------------------------------------------
+library(tidyverse) # data manipulation and visualization
+library(janitor) # clear table column name
+library(magrittr) # pip types
+library(gtsummary) # result tables
+library(gt) # change table format
+library(gtExtras)
+
+## Negate funcion ---------------------------------------------------------------
+`%!in%` = Negate(`%in%`)
+
+## Session info ------------------------------------------------------------------
+sessionInfo()
+
+## host data -----------------------------------------------------------------
+# (we will use the data in another function)
+status_hst <- readxl::read_excel(here::here("Scripts/datasets", "supplementary_material_1.xlsx"), 
+                sheet = "survey_info_hosts") |>
+  clean_names() |>
+  select(-latex) |>
+  mutate(native = ifelse(native == "yes", 1, 0)) |>
+  mutate(one_antro_use = +any(str_detect(c_across(use_popular_medicine:use_agroforestry), "yes"))) |>
+  mutate(sps_name = paste0(host_complete_name, " ", canonical_author))
+
+
+#Importing main data
+initial_data <- rio::import(
+  here::here("Scripts/datasets", "supplementary_material_1.xlsx"), sheet = 'lonomia_host') 
+
+tab_yr <- initial_data |>
+  dplyr::arrange(host_especies, min_year) |>
+  pivot_wider(names_from = "lonomia_species", 
+              values_from = "min_year", values_fn = ~min(.x)) |>
+  dplyr::group_by(host_especies) |>
+  dplyr::summarise(year_achelous = min(`Lonomia achelous`),
+                   year_obliqua = min(`Lonomia obliqua`),
+                   references = paste(references, collapse = ", "), .groups = "keep")
+
+status_hst |>
+  left_join(tab_yr, by = c("host_complete_name" = "host_especies")) |> 
+  #mutate(n = 1) |>
+  select(family, lonomia_species, host_complete_name, 
+         native, year_achelous,  year_obliqua, references) |>
+  mutate(native = ifelse(native == 1, "yes", "no")) |>
+  mutate_at(vars(year_achelous,  year_obliqua), as.character) |>
+  mutate_at(vars(year_achelous,  year_obliqua), replace_na, "-") |>
+  select(-lonomia_species) |>
+  arrange(family, host_complete_name) |>
+  select(-references) |>
+  #gt(groupname_col = "family") |>
+  gt() |>
+  #gt_merge_stack(col1 = host_complete_name, col2 = family) |>
+  cols_label(
+    host_complete_name = "family/host species",
+    year_achelous = "Lonomia achelous¹",
+    year_obliqua = "Lonomia obliqua¹",
+  ) |>
+  tab_footnote(
+    footnote = "¹Year of first interaction record.
+    If the documentation does not include the sampling year, the document's year is used instead."
+    #locations = cells_column_labels(columns = msrp)
+  ) |>
+  gt_theme_espn() |>
+  gt::tab_options(table.font.size = '12px') 
+```
