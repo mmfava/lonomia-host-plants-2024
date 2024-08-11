@@ -1,28 +1,9 @@
-# An Overlooked Risk Factor for Lonomism: Host Plants of *Lonomia achelous* Crammer 1777 and *Lonomia obliqua* Walker 1955
+# A neglected risk factor for lonomism: The host plants of *Lonomia achelous* and *Lonomia obliqua*
 
-## Authors
-Marília Melo Favalesso[1,*], Matheus Valentim[2,*], Matías Emanuel Martínez[1], Admir Cesar de Oliveira Júnior[3,*], Lisete Maria Lorini[4], Shirley Martins Silva[5], Ana Tereza Bittencourt Guimarães[5], and Maria Elisa Peichoto[1]
-
-<small>
-
-[1] National Council for Scientific and Technical Research (CONICET), National Institute of Tropical Medicine (INMeT) - ANLIS “Dr. Carlos G Malbrán”, Research Group in Biotoxinology (GrinBiTox), Argentina. <br>
-[2] IT University of Copenhagen, Denmark <br>
-[3] Federal University of Paraná, Brazil <br>
-[4] University of Passo Fundo, Brazil <br>
-[5] State University of West Paraná, Center for Biological and Health Sciences, Brazil. 
-
-[*] Data analysis
-
-</small>
 
 ## Abstract
 
-Lonomism envenoming is a serious and potentially fatal condition caused by exposure to the larvae of *L. achelous* and *L. obliqua* Walker 1855. These caterpillars are polyphagous and feed on a wide variety of plants ([Lorini, 2008](https://www.anolisbooks.com.br/produtos/detalhes/705/lepidopteros-de-importancia-medica-principais-especies-no-rio-grande-do-sul)). This means that exposure to *Lonomia* can occur in places where the presence of these hosts is common. Despite the importance of host plants in the life cycle of *Lonomia* and in human envenoming, relatively little is known about how the relationship between these organisms impacts envenoming cases.
-In this context, the host plants of *Lonomia* spp. can be considered a risk factor for lonomism envenoming, as the caterpillars go through their entire life cycle on the host, and the accidents reported commonly occur in people who handle or accidentally touch colonies in trees ([Favalesso et al. 2023](https://linkinghub.elsevier.com/retrieve/pii/S0001-706X(22)00468-5)). Therefore, knowledge about the ecology and distribution of the host plants is fundamental to understanding and preventing envenoming by *Lonomia*.
-Like other venomous animals, it is speculated that anthropogenic changes have created favorable conditions for the presence of *Lonomia* spp. caterpillars. Moreover, it is hypothesized that the loss of native hosts would be responsible for an adaptation of the caterpillars to non-native species in the South American continent, which would lead them to occupy new types of environments ([Favalesso et al., 2019](https://www.sciencedirect.com/science/article/abs/pii/S0001706X18309872); [Garcia, 2013](https://acervodigital.ufpr.br/handle/1884/31744?show=full); [Lorini, 1999]()). Although this hypothesis has been discussed in a variety of studies on lonomism (see chapter 1), little progress has been made to corroborate or refute it.
-Thus, the aim of this chapter is to carry out a bibliographic and documentary review of the hosts of *L. achelous* and *L. obliqua* to characterize them in terms of their evolutionary origin (native or non-native), associated human uses, as well as the biological properties and distributive characteristics of the native hosts that may be related to the presence and distribution of both species. With this review, the aim is to provide relevant information for the design of prevention and control strategies for accidents by *Lonomia* spp. in South America.
-
-> Future link for the thesis or paper.
+The host plants play a crucial role in the survival of Lonomia spp., particularly during their larval stage, which is the sole phase associated with lonomism, a severe and potentially fatal envenomation. To contribute to the understanding of the relationship between the two caterpillar species involved in such cases - Lonomia achelous Crammer 1777 and Lonomia obliqua Walker 1855 -  and their respective host plants, as well as to evaluate the factors that may increase the risk of  human envenomation, a bibliographical survey about specific interactions was conducted (biological characteristics, human uses, and geographical distribution). The data was sourced from scientific literature and/or opinion from experts in the Saturniidae family. The findings revealed that both species are polyphagous, and the presence of tannins in the leaves is a shared characteristic among their host plants. Most host species have at least one human use, thereby escalating the risk of inadvertent contact with the caterpillars. Additionally, the geographical distribution of both species aligns with the distribution of their native host plants, which are predominantly heliophilous. Despite potential local or regional fluctuations due to habitat fragmentation, it is believed that the global distribution range of L. obliqua has remained stable over time. This work provides an extensive panoramic insight into the interactions between Lonomia spp., their hosts, and the environment, which is essential for developing effective prevention and control strategies for Lonomia spp. accidents in South America.
 
 --------
 
